@@ -1,7 +1,6 @@
 package sas.mastermind.core.controllers;
 
 import sas.mastermind.core.models.Session;
-import sas.mastermind.core.models.SessionImplementation;
 
 public class ExitController extends Controller {
     public ExitController(Session session) {
@@ -9,6 +8,6 @@ public class ExitController extends Controller {
     }
 
     public void next() {
-        ((SessionImplementation) this.session).next();
+        ((Session) this.session).next();
     }
 }

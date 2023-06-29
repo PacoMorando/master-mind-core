@@ -1,44 +1,76 @@
 package sas.mastermind.core.controllers;
 
-import sas.mastermind.core.models.ProposedCombination;
-import sas.mastermind.core.models.SecretCombination;
-import sas.mastermind.core.models.Session;
+import sas.mastermind.core.models.*;
 
 import java.util.ArrayList;
 
-public abstract class PlayController extends AcceptorController {
+public class PlayController extends AcceptorController {
+
+    private final ProposedCombinationController proposedCombinationController;
+    private final UndoController undoController;
+    private final RedoController redoController;
+    private final ExitController exitController;
+
     public PlayController(Session session) {
         super(session);
+        this.proposedCombinationController = new ProposedCombinationController(session);
+        this.undoController = new UndoController(session);
+        this.redoController = new RedoController(session);
+        this.exitController = new ExitController(session);
     }
 
-    public abstract SecretCombination getSecretCombination();
+    public SecretCombination getSecretCombination() {
+        return this.proposedCombinationController.getSecretCombination();
+    }
 
-    public abstract int getCurrentAttempt();
+    public int getCurrentAttempt() {
+        return this.proposedCombinationController.getCurrentAttempt();
+    }
 
-    public abstract void addProposedCombination(String colorsProposed);
+    public void addProposedCombination(String colorsProposed) {
+        this.proposedCombinationController.addProposedCombination(colorsProposed);
+    }
 
-    public abstract boolean isFinished();
+    public boolean isFinished() {
+        return this.proposedCombinationController.isFinished();
+    }
 
-    public abstract boolean isWinner();
+    public boolean isWinner() {
+        return this.proposedCombinationController.isWinner();
+    }
 
-    public abstract ArrayList<ProposedCombination> getProposeCombinations();
+    public ArrayList<ProposedCombination> getProposeCombinations() {
+        return this.proposedCombinationController.getProposeCombinations();
+    }
 
-    public abstract int calculateBlacks(ProposedCombination proposedCombination);
+    public int calculateBlacks(ProposedCombination proposedCombination) {
+        return this.proposedCombinationController.calculateBlacks(proposedCombination);
+    }
 
-    public abstract int calculateWhites(ProposedCombination proposedCombination);
+    public int calculateWhites(ProposedCombination proposedCombination) {
+        return this.proposedCombinationController.calculateWhites(proposedCombination);
+    }
 
-    public abstract boolean isUndoable();
+    public boolean isUndoable() {
+        return this.undoController.isUndoable();
+    }
 
-    public abstract void undo();
+    public void undo() {
+        this.undoController.undo();
+    }
 
-    public abstract boolean isRedoable();
+    public boolean isRedoable() {
+        return this.redoController.isRedoable();
+    }
 
-    public abstract void redo();
+    public void redo() {
+        this.redoController.redo();
+    }
 
     public void next() {
+        this.exitController.next();
     }
 
-    @Override
     public void accept(ControllerVisitor controllerVisitor) {
         controllerVisitor.visit(this);
     }

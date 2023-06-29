@@ -2,22 +2,21 @@ package sas.mastermind.core.controllers;
 
 
 import sas.mastermind.core.models.Session;
-import sas.mastermind.core.models.SessionImplementation;
 
 public class UndoController extends Controller {
 
-    private final SessionImplementation sessionImplementation;
+    //private final Session session;
 
     public UndoController(Session session) {
         super(session);
-        this.sessionImplementation = ((SessionImplementation) this.session);
+       // this.session = ((Session) this.session);
     }
 
     public boolean isUndoable() {
-        return this.sessionImplementation.isUndoable();
+        return this.session.isUndoable();
     }
 
     public void undo() {
-        this.sessionImplementation.undo();
+        this.session.undo();
     }
 }

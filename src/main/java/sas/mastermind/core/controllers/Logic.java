@@ -6,7 +6,7 @@ import sas.mastermind.core.models.StateValue;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Logic {
+public abstract class Logic {
     protected Session session;
     protected Map<StateValue, AcceptorController> acceptorControllerMap;
 

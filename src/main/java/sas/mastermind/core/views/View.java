@@ -7,5 +7,4 @@ public abstract class View implements ControllerVisitor {
     public void interact(AcceptorController acceptorController) {
         acceptorController.accept(this);
     }
-
 }

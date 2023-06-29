@@ -1,4 +1,4 @@
-package sas.mastermind.core.models.DAO;
+package sas.mastermind.core.dao;
 
 import sas.mastermind.core.models.ProposedCombination;
 

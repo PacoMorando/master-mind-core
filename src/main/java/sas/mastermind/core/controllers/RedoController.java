@@ -1,22 +1,21 @@
 package sas.mastermind.core.controllers;
 
 import sas.mastermind.core.models.Session;
-import sas.mastermind.core.models.SessionImplementation;
 
 public class RedoController extends Controller {
 
-    private final SessionImplementation sessionImplementation;
+    //private final Session session;
 
     public RedoController(Session session) {
         super(session);
-        this.sessionImplementation = ((SessionImplementation) this.session);
+        //this.session = ((Session) this.session);
     }
 
     public boolean isRedoable() {
-        return this.sessionImplementation.isRedoable();
+        return this.session.isRedoable();
     }
 
     public void redo() {
-        this.sessionImplementation.redo();
+        this.session.redo();
     }
 }

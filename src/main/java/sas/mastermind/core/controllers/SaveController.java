@@ -1,22 +1,36 @@
 package sas.mastermind.core.controllers;
 
+import sas.mastermind.core.dao.SessionDAO;
 import sas.mastermind.core.models.Session;
 
-public abstract class SaveController extends AcceptorController {
+public class SaveController extends AcceptorController {
 
-    public SaveController(Session session) {
+    private final SessionDAO sessionDAO;
+
+    public SaveController(Session session, SessionDAO sessionDAO) {
         super(session);
+        this.sessionDAO = sessionDAO;
     }
 
-    public abstract void save();
+    public void save(String name) {
+        this.sessionDAO.save(name);
+    }
 
-    public abstract void save(String name);
+    public void save() {
+        this.sessionDAO.save();
+    }
 
-    public abstract void next();
+    public void next() {
+        ((Session) this.session).next();
+    }
 
-    public abstract boolean hasName();
+    public boolean hasName() {
+        return ((Session) this.session).hasName();
+    }
 
-    public abstract boolean exists(String readString);
+    public boolean exists(String name) {
+        return this.sessionDAO.exist(name);
+    }
 
     @Override
     public void accept(ControllerVisitor controllerVisitor) {
