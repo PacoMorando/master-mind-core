@@ -21,11 +21,11 @@ public class SaveController extends AcceptorController {
     }
 
     public void next() {
-        ((Session) this.session).next();
+        this.session.next();
     }
 
     public boolean hasName() {
-        return ((Session) this.session).hasName();
+        return this.session.hasName();
     }
 
     public boolean exists(String name) {

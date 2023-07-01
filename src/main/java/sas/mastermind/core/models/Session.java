@@ -1,5 +1,6 @@
 package sas.mastermind.core.models;
 
+
 import java.util.ArrayList;
 
 public class Session {

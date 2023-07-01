@@ -6,31 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="328ba431-075e-4736-aeaa-f1fdbaa84cab" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/controllers/AcceptorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/controllers/AcceptorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/controllers/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/controllers/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/controllers/ControllerVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/controllers/ControllerVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/controllers/ExitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/controllers/ExitController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/controllers/Logic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/controllers/Logic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/controllers/PlayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/controllers/PlayController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/controllers/RedoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/controllers/RedoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/controllers/ResumeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/controllers/ResumeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/controllers/SaveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/controllers/SaveController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/controllers/StartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/controllers/StartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/controllers/UndoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/controllers/UndoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/controllers/implementation/LogicImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/controllers/LogicImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/controllers/implementation/PlayControllerImplementation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/controllers/implementation/ProposedCombinationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/controllers/ProposedCombinationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/controllers/implementation/ResumeControllerImplementation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/controllers/implementation/SaveControllerImplementation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/controllers/implementation/StartControllerImplementation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/models/DAO/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/dao/DAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/models/DAO/GameDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/dao/GameDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/models/DAO/ProposedCombinationDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/dao/ProposedCombinationDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/models/DAO/SecretCombinationDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/dao/SecretCombinationDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/models/DAO/SessionImplementationDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/dao/SessionDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/dao/GameDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/dao/ProposedCombinationDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/dao/SecretCombinationDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/dao/SessionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/dao/SessionDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/models/Session.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/models/Session.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/models/SessionImplementation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/views/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sas/mastermind/core/views/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
