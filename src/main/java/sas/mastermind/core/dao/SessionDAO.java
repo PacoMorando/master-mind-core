@@ -3,7 +3,7 @@ package sas.mastermind.core.dao;
 import sas.mastermind.core.models.Session;
 
 public abstract class SessionDAO {
-    private SessionDTO sessionDTO;
+    protected SessionDTO sessionDTO;
 
     public void associate(Session session) {
         this.sessionDTO = new SessionDTO(session);
