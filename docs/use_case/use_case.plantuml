@@ -1,0 +1,25 @@
+@startuml use-case-core
+!theme plain
+left to right direction
+
+actor Player
+
+usecase Start
+usecase Open
+usecase ProposeCombination
+usecase Undo
+usecase Redo
+usecase Save
+usecase Resume
+usecase Exit
+
+Player -->(Start)
+Player -->(Open)
+Player -->(ProposeCombination)
+Player -->(Undo)
+Player -->(Redo)
+Player -->(Save)
+Player -->(Resume)
+Player -->(Exit)
+
+@enduml
